@@ -1,0 +1,24 @@
+name: 'Weeek Task Link Action'
+description: 'Adds a Weeek task link to the pull request comments.'
+author: 'your-username'
+inputs:
+  weeek_api_token:
+    description: 'API token to authenticate with Weeek'
+    required: true
+  workspace_id:
+    description: 'The ID of the Weeek workspace'
+    required: true
+outputs:
+  task_number:
+    description: 'Task number extracted from the PR title'
+  task_title:
+    description: 'Title of the Weeek task'
+runs:
+  using: "composite"
+  steps:
+    - name: Extract task number from PR title
+      shell: bash
+      run: ./index.sh
+branding:
+  color: 'blue'
+  icon: 'link'
