@@ -1,6 +1,6 @@
 name: 'Weeek Task Link Action'
 description: 'Adds a Weeek task link to the pull request comments.'
-author: 'your-username'
+author: 'SteGlaset'
 inputs:
   weeek_api_token:
     description: 'API token to authenticate with Weeek'
