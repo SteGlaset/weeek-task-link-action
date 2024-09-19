@@ -18,6 +18,7 @@ runs:
   steps:
     - name: Extract task number from PR title
       shell: bash
+      working-directory: ./.github/actions/weeek-task-link
       run: ./index.sh
 branding:
   color: 'blue'
