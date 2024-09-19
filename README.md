@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add Weeek task link
-        uses: SteGlaset/weeek-task-link-action@v1
+        uses: SteGlaset/weeek-task-link-action@v1.0.1
         with:
           weeek_api_token: ${{ secrets.WEEEK_API_TOKEN }}
           workspace_id: ${{ secrets.WEEEK_WORKSPACE_ID }}
