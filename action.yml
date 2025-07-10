@@ -14,12 +14,8 @@ outputs:
   task_title:
     description: 'Title of the Weeek task'
 runs:
-  using: "composite"
-  steps:
-    - name: Extract task number from PR title
-      shell: bash
-      working-directory: ./.github/actions/weeek-task-link
-      run: ./index.sh
+  using: 'node20'
+  main: 'dist/index.js'
 branding:
   color: 'blue'
   icon: 'link'
