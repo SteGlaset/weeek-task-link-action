@@ -1,0 +1,14 @@
+{
+  "name": "weeek-task-link-action",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --platform=node --target=node20 --minify --outfile=dist/index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "undici": "^7.11.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.6"
+  }
+}
